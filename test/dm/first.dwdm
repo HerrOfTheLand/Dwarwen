@@ -1,0 +1,4 @@
+push #32
+push #10
+add
+hlt
