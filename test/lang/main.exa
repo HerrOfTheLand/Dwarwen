@@ -1,0 +1,57 @@
+[ ]         # array
+{ }         # dict (object)
+( ) => { }   # function
+""         # string
+123        # long long
+123.0      # double
+true|false # bool
+none       # none
+
+func( args )    # function call with <args>
+array[ index ]  # get item from array at index <index>
+dict[ value ]   # get item from dict at index <index>
+dict.bareword # get item from dict at index "<bareword>"
+
+expr |> func( args ) # == func( args, expr ) # pipe
+
+# if statement
+if expr { #returns calcucalted expr or none
+    expr
+} else if expr {
+    expr
+} else {
+    expr
+}
+
+while expr { # returns expr or none
+    break expr
+    continue
+}
+
+for item in array|generator { # returns expr or none
+    break expr
+    continue
+}
+
+loop { # returns expr
+    break expr
+    continue
+}
+
+list(map(lambda x: x.strip(), f.readlines()))
+f.readlines( ) |> map( (x) => { x.strip() } ) |> list( )
+
+main = () => {
+    for item in range(0, 20) {
+        print(item)
+    }
+}
+
+range = (start, stop, step = 1) => {
+    end = stop - step
+    while start != end {
+        yeild start
+        start += step
+    }
+    return end
+}
