@@ -1,6 +1,8 @@
 #include "../include/util.h"
-#include <stdlib.h>
+
 #include <stdio.h>
+#include <stdlib.h>
+
 
 extern char*
 Util_read_ascii_file ( const char* path )

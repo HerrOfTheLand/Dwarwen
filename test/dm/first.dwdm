@@ -1,4 +1,5 @@
-push #32
-push #10
-add
-hlt
+PUSH #32
+PUSH #10
+ADD
+NOP
+HLT
